@@ -2,19 +2,31 @@
 <html>
   <head>
     <title>Photogram GUI</title>
-    <%= csrf_meta_tags %>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="RZk5NV/PHakNFwPaiQTcVjnBOqifxdNrQTIGAS0mOtnnkVVHxHk6fGcYxkCz4Vs96Bm3XX3L2YfMeHHJ6mas/g==" />
 
     <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
     <meta charset="utf-8">
 
     <!-- Make it responsive to small screens -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= csp_meta_tag %>
+    
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <link rel="stylesheet" media="all" href="/assets/application-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" />
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="/users">Users</a>
+        </li>
+        <li>
+          <a href="/photos">Photos</a>
+        </li>
+      </ul>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
